@@ -21,7 +21,6 @@ function pressA(){
     $(document).keypress(function(evt){
     console.log(evt.key)
     if(lvl==0){
-        lvl++
        nextSequence()
     }
 });
