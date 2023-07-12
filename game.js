@@ -12,6 +12,8 @@ function nextSequence(){
     console.log(gamePattern);
     makeSound(randomChosenColour);
     buttonAnimation(randomChosenColour);
+        lvl++;
+        i=-1;
     $("h1").text("LEVEL " + lvl)
 }
 
@@ -60,9 +62,6 @@ function buttonCheck(evt){
 
     }else if(i==gamePattern.length-1&&evt==gamePattern[i]){
         console.log("NEXT LEVEL");
-        $("h1").text("LEVEL " + lvl)
-        lvl++;
-        i=-1;
         setTimeout(nextSequence, 1000);
     }
 }
